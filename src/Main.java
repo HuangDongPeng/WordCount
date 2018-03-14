@@ -5,12 +5,9 @@ public class Main {
 
 
     public static void main(String[] args)throws Exception{
-
         String testPath="d:/test.c";
 
-        ReadChar(testPath);
-        ReadLine(testPath);
-        ReadWord(testPath);
+       FindFile("d:/test/");
 
     }
 
@@ -89,6 +86,29 @@ public class Main {
             System.out.println("word count: " + wordCount);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    public static  void FindFile(String dir){
+        File tmpFile=new File(dir);
+        if(tmpFile.isDirectory()){
+            try {
+                String [] fileNames=tmpFile.list();
+                if(fileNames.length!=0){
+                    for (String s:fileNames) {
+                        String newPath=dir+"/"+s;
+                        FindFile(newPath);
+                    }
+                }
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }else {
+            if(dir.contains(".c"))
+            {
+                System.out.println("file dir is: "+dir);
+                ReadLine(dir);
+            }
         }
     }
 }

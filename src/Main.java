@@ -28,13 +28,10 @@ public class Main {
                 //判断是不是回车
                 if(!(tempChar==13||tempChar==10))
                     charCount++;
-
                 character=(char)tempChar;
-                System.out.print(" "+tempChar);
-
             }
             reader.close();
-            System.out.println("word count: "+charCount);
+            System.out.println("char count: "+charCount);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -77,7 +74,6 @@ public class Main {
             while ((tempChar = reader.read()) != -1) {
                if((tempChar>=65&&tempChar<=90)||(tempChar>=97&&tempChar<=122)){
                    isChar=true;
-                   System.out.print((char)tempChar);
                }
                else {
                    if(isChar)

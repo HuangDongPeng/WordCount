@@ -11,8 +11,8 @@ public class Main {
 
         String testPath="d:/test.c";
 
-
         ReadChar(testPath);
+        ReadLine(testPath);
 
         System.out.println();
         System.out.println("char count"+countChar);
@@ -27,20 +27,52 @@ public class Main {
         Reader reader=null;
 
         try{
+            int wordCount=0;
             reader  =new InputStreamReader(new FileInputStream(file));
             int tempChar;
             char character;
             while((tempChar=reader.read())!=-1){
-                character=(char)tempChar;
-                //if(character=='\n')
-                //System.out.println("换行");
+            //判断是不是回车
+                if(!(tempChar==13||tempChar==10))
+                    wordCount++;
 
-                System.out.print(character);
+                character=(char)tempChar;
+                System.out.print(" "+tempChar);
+
             }
             reader.close();
+            System.out.println("word count: "+wordCount);
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    public  static  void ReadLine(String path){
+        File file = new File(path);
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(file));
+            String tempString = null;
+            int line = 0;
+            while ((tempString = reader.readLine()) != null) {
+                line++;
+            }
+            reader.close();
+            System.out.println("line count: "+line  );
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e1) {
+                }
+            }
+        }
+    }
+
+    public  static  void ReadWord(String path){
+
     }
 }
 

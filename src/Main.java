@@ -1,14 +1,17 @@
 import java.io.*;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
+    static StringBuilder sb=new StringBuilder();
 
-    public static void main(String[] args)throws Exception{
+    public  static void main(String[] args)throws Exception{
         String testPath="d:/test/test.c";
-        //GetDifferentLine(testPath);
-        StopWordTable("d:/test/test.txt",testPath);
+            ReadLine(testPath);
+            ReadWord(testPath);
+            OutPutFile("d:/test.txt",sb);
     }
 
     public  static  void ReadChar(String path){
@@ -28,7 +31,8 @@ public class Main {
                 character=(char)tempChar;
             }
             reader.close();
-            System.out.println("char count: "+charCount);
+            sb.append(path+"字符数： "+charCount);
+            AppendNewLine();
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -45,7 +49,8 @@ public class Main {
                 line++;
             }
             reader.close();
-            System.out.println("line count: "+line  );
+            sb.append(path+"行数："+line);
+            AppendNewLine();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -83,13 +88,13 @@ public class Main {
 
             }
             reader.close();
-            System.out.println("word count: " + wordCount);
+            sb.append(path+"单词数："+wordCount);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public static  void FindFile(String dir){
+    public  static  void FindFile(String dir){
         File tmpFile=new File(dir);
         if(tmpFile.isDirectory()){
             try {
@@ -132,10 +137,12 @@ public class Main {
                     codeLine++;
             }
             reader.close();
-
-            System.out.println("code line is: "+codeLine);
-            System.out.println("empty line is: "+emptyLine);
-            System.out.println("note line is: "+noteLine);
+            sb.append(path+"代码行："+codeLine);
+            AppendNewLine();
+            sb.append(path+"空行："+emptyLine);
+            AppendNewLine();
+            sb.append(path+"注释行："+noteLine);
+            AppendNewLine();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -226,6 +233,25 @@ public class Main {
                 return  true;
         }
         return  false;
+    }
+
+    public  static  void OutPutFile(String outputPath,StringBuilder sb) throws IOException {
+        File file=new File(outputPath);
+        if(!file.exists())
+           file.createNewFile();
+
+        FileOutputStream fos=null;
+        PrintWriter pw=null;
+
+        fos=new FileOutputStream(file);
+        pw=new PrintWriter(fos);
+        pw.write(sb.toString());
+        pw.flush();
+    }
+
+    public  static  void AppendNewLine(){
+        sb.append('\r');
+        sb.append('\n');
     }
 
 }

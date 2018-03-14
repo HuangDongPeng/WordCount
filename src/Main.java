@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args)throws Exception{
         String testPath="d:/test/test.c";
         //GetDifferentLine(testPath);
-        StopWordTable("d:/test/test.txt","");
+        StopWordTable("d:/test/test.txt",testPath);
     }
 
     public  static  void ReadChar(String path){
@@ -149,14 +149,13 @@ public class Main {
         }
     }
 
-    public  static void StopWordTable(String tablePath,String filePath)
-    {
-        File file = new File(tablePath);
+    public  static void StopWordTable(String tablePath,String filePath) {
+        File wordTableFile = new File(tablePath);
         Reader reader = null;
         ArrayList<String> wordTable=new ArrayList<String>();
 
         try {
-            reader = new InputStreamReader(new FileInputStream(file));
+            reader = new InputStreamReader(new FileInputStream(wordTableFile));
             int tempChar;
             boolean isChar=false;
             StringBuilder sb=new StringBuilder();
@@ -185,6 +184,48 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        //读取文件内容
+        File readFile=new File(filePath);
+        try {
+            reader = new InputStreamReader(new FileInputStream(readFile));
+            int tempChar;
+            int wordCount=0;
+            boolean isChar=false;
+            StringBuilder sb=new StringBuilder();
+
+            while ((tempChar = reader.read()) != -1) {
+                if((tempChar>=65&&tempChar<=90)||(tempChar>=97&&tempChar<=122)){
+                    isChar=true;
+                    sb.append((char)tempChar);
+                }
+                else {
+                    if(isChar)
+                    {
+                        if(!IsInTable(wordTable,sb.toString())){
+                            wordCount++;
+                        }
+                        sb=new StringBuilder();
+                        isChar=false;
+                    }
+                    continue;
+                }
+
+            }
+            reader.close();
+            System.out.print("word count with stopWordTable: "+wordCount);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public  static boolean IsInTable(ArrayList<String> tabel,String word){
+        for (String s :
+                tabel) {
+            if(s.equals(word))
+                return  true;
+        }
+        return  false;
     }
 
 }

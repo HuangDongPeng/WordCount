@@ -1,14 +1,14 @@
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
 
     public static void main(String[] args)throws Exception{
-        String testPath="d:/test.c";
-
-       FindFile("d:/test/");
-
+        String testPath="d:/test/test.c";
+        //GetDifferentLine(testPath);
+        StopWordTable("d:/test/test.txt","");
     }
 
     public  static  void ReadChar(String path){
@@ -111,5 +111,81 @@ public class Main {
             }
         }
     }
+
+    public  static void GetDifferentLine(String path){
+        File file = new File(path);
+        BufferedReader reader = null;
+        try {
+
+            reader = new BufferedReader(new FileReader(file));
+            String tempString = null;
+            int emptyLine=0;
+            int codeLine=0;
+            int noteLine=0;
+            while ((tempString = reader.readLine()) != null) {
+                if(tempString.contains("//"))
+                    noteLine++;
+                else if(tempString.isEmpty()){
+                    emptyLine++;
+                }
+                else
+                    codeLine++;
+            }
+            reader.close();
+
+            System.out.println("code line is: "+codeLine);
+            System.out.println("empty line is: "+emptyLine);
+            System.out.println("note line is: "+noteLine);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e1) {
+                }
+            }
+        }
+    }
+
+    public  static void StopWordTable(String tablePath,String filePath)
+    {
+        File file = new File(tablePath);
+        Reader reader = null;
+        ArrayList<String> wordTable=new ArrayList<String>();
+
+        try {
+            reader = new InputStreamReader(new FileInputStream(file));
+            int tempChar;
+            boolean isChar=false;
+            StringBuilder sb=new StringBuilder();
+
+            while ((tempChar = reader.read()) != -1) {
+                if((tempChar>=65&&tempChar<=90)||(tempChar>=97&&tempChar<=122)){
+                    isChar=true;
+                    sb.append((char)tempChar);
+                }
+                else {
+                    if(isChar)
+                    {
+                        wordTable.add(sb.toString());
+                        sb=new StringBuilder();
+                        isChar=false;
+                    }
+                    continue;
+                }
+
+            }
+            reader.close();
+            if(isChar&&sb.length()!=0){
+                wordTable.add(sb.toString());
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
 

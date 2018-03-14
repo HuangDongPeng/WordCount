@@ -17,13 +17,16 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="109" column="30" lean-forward="true" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+            <state relative-caret-position="302">
+              <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
                 <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
                 <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
+                <element signature="method#FindFile#0;class#Main#0" expanded="false" />
+                <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
+                <element signature="e#4558#4566#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,8 +57,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="105" />
-    <option name="y" value="434" />
+    <option name="x" value="194" />
+    <option name="y" value="53" />
     <option name="width" value="1656" />
     <option name="height" value="1047" />
   </component>
@@ -284,20 +287,23 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="109" column="30" lean-forward="true" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+        <state relative-caret-position="302">
+          <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
             <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
+            <element signature="method#FindFile#0;class#Main#0" expanded="false" />
+            <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
+            <element signature="e#4558#4566#0" expanded="true" />
           </folding>
         </state>
       </provider>

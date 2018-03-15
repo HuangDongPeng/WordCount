@@ -18,8 +18,16 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
-        String[] inputArgs =args; //{"-c", "-a","-s", "test.c","-e","test.txt","-o","output.txt"};
-        //String[] inputArgs={"-s","-w","*.class","-o","output.txt"};
+
+        Test exm=new Test();
+        //System.out.println(exm.Test_CharCount(10,"test.c"));
+        //System.out.println(exm.Test_WordCount(2,"test.c"));
+
+        GetDifferentLine("test.c");
+
+        //Execute(args);
+    }
+    public  static  void Execute(String[] inputArgs){
         for (int i = 0; i < inputArgs.length; i++) {
             //is use stop list
             if (inputArgs[i].contains("-e")) {
@@ -115,7 +123,7 @@ public class Main {
         }
     }
 
-    public static void ReadChar(String path) {
+    public static int ReadChar(String path) {
 
         File file = new File(path);
         Reader reader = null;
@@ -134,9 +142,11 @@ public class Main {
             reader.close();
             sb.append(path + "字符数： " + charCount);
             AppendNewLine();
+            return charCount;
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return 0;
     }
 
     public static void ReadLine(String path) {
@@ -164,7 +174,7 @@ public class Main {
         }
     }
 
-    public static void ReadWord(String path) {
+    public static int ReadWord(String path) {
         File file = new File(path);
         Reader reader = null;
 
@@ -189,9 +199,11 @@ public class Main {
             reader.close();
             sb.append(path + "单词数：" + wordCount);
             AppendNewLine();
+            return wordCount;
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return 0;
     }
 
     public static void FindFile(String dir) {
@@ -228,13 +240,14 @@ public class Main {
             while ((tempString = reader.readLine()) != null) {
                 if (tempString.contains("//"))
                     noteLine++;
-                else if (tempString.isEmpty()) {
+                else if (tempString.isEmpty()||IsEmpty(tempString)) {
                     emptyLine++;
                 } else
                     codeLine++;
             }
             reader.close();
             sb.append(path + "代码行/空行/注释行：" + codeLine + "/" + emptyLine + "/" + noteLine);
+            System.out.println("emptyline: "+emptyLine);
             AppendNewLine();
         } catch (IOException e) {
             e.printStackTrace();
@@ -346,6 +359,24 @@ public class Main {
     public static void AppendNewLine() {
         sb.append('\r');
         sb.append('\n');
+    }
+
+    private static boolean IsEmpty(String s){
+        char [] characters=s.toCharArray();
+        boolean isAllSpace=true;
+        int otherChar=0;
+        for (char c :
+                characters) {
+            if(c!=9&&c!=32)
+                isAllSpace=false;
+            if (!(c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+                otherChar++;
+        }
+        if(isAllSpace)
+            return true;
+        else if(otherChar<=1)
+            return true;
+        return false;
     }
 
 }

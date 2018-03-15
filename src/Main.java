@@ -86,7 +86,6 @@ public class Main {
                 if (filePath.isEmpty())
                     return;
                 if (isUseStopList){
-                    System.out.println("use stop list");
                     StopWordTable(stopListFileName, filePath);
                 }
                 else

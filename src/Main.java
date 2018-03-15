@@ -6,43 +6,90 @@ import java.util.Scanner;
 public class Main {
 
     static StringBuilder sb = new StringBuilder();
-    static String filePath;
-    static String outputFileName;
-    static String stopListFileName;
-    static String fileDir;
+    static String filePath=null;
+    static String outputFileName=null;
+    static String stopListFileName=null;
+    static String fileDir=null;
+    static boolean isUseStopList = false;
+    static boolean isOutPutFile=false;
 
     public static void main(String[] args) throws Exception {
-        String[] inputArgs = {"-c", "-a", "d:/test/test.c"};
-        for (String s :
-                inputArgs) {
-            if (s.contains(".c")) {
-                filePath = s;
+        String[] inputArgs = {"-c", "-a","-w", "d:/test/test.c","-e","d:/test/test.txt","-o","d:/output.txt"};
+
+        for (int i = 0; i < inputArgs.length; i++) {
+            //is use stop list
+            if (inputArgs[i].contains("-e")) {
+                isUseStopList = true;
+                i++;
+                stopListFileName = inputArgs[i];
+            }
+            //is out put new file
+            if(inputArgs[i].contains("-o")){
+                isOutPutFile=true;
+                i++;
+                outputFileName=inputArgs[i];
+            }
+        }
+
+        int fileNameIndex = 0;
+        //get fileName index
+        for (int i = 0; i < inputArgs.length; i++) {
+            if (inputArgs[i].contains(".c")) {
+                fileNameIndex = i;
+                filePath=inputArgs[i];
                 break;
             }
         }
+
+        for (int i = 0; i < fileNameIndex; i++) {
+            OrderJudge(inputArgs[i]);
+        }
+
+
+        if(isOutPutFile)
+            OutPutFile(outputFileName,sb);
     }
 
     public static void OrderJudge(String order) {
         switch (order) {
             case "-c":
+                if (filePath.isEmpty())
+                    return;
                 ReadChar(filePath);
                 break;
             case "-w":
-                ReadWord(filePath);
+                if (filePath.isEmpty())
+                    return;
+                if (isUseStopList){
+                    System.out.println("use stop list");
+                    StopWordTable(stopListFileName, filePath);
+                }
+                else
+                    ReadWord(filePath);
                 break;
             case "-l":
+                if (filePath.isEmpty())
+                    return;
                 ReadLine(filePath);
                 break;
             case "-o":
+                if (outputFileName.isEmpty())
+                    return;
                 OutPutFile(outputFileName, sb);
                 break;
             case "-s":
+                if (fileDir.isEmpty())
+                    return;
                 FindFile(fileDir);
                 break;
             case "-a":
+                if (filePath.isEmpty())
+                    return;
                 GetDifferentLine(filePath);
                 break;
             case "-e":
+                if (stopListFileName.isEmpty())
+                    return;
                 StopWordTable(stopListFileName, filePath);
                 break;
         }
@@ -182,6 +229,7 @@ public class Main {
     }
 
     public static void StopWordTable(String tablePath, String filePath) {
+        isUseStopList=false;
         File wordTableFile = new File(tablePath);
         Reader reader = null;
         ArrayList<String> wordTable = new ArrayList<String>();
@@ -222,18 +270,18 @@ public class Main {
             int tempChar;
             int wordCount = 0;
             boolean isChar = false;
-            StringBuilder sb = new StringBuilder();
+            StringBuilder localSb = new StringBuilder();
 
             while ((tempChar = reader.read()) != -1) {
                 if ((tempChar >= 65 && tempChar <= 90) || (tempChar >= 97 && tempChar <= 122)) {
                     isChar = true;
-                    sb.append((char) tempChar);
+                    localSb.append((char) tempChar);
                 } else {
                     if (isChar) {
-                        if (!IsInTable(wordTable, sb.toString())) {
+                        if (!IsInTable(wordTable, localSb.toString())) {
                             wordCount++;
                         }
-                        sb = new StringBuilder();
+                        localSb = new StringBuilder();
                         isChar = false;
                     }
                     continue;
@@ -241,7 +289,7 @@ public class Main {
 
             }
             reader.close();
-            System.out.print("word count with stopWordTable: " + wordCount);
+            sb.append(filePath+"单词数:" + wordCount);
         } catch (Exception e) {
             e.printStackTrace();
         }

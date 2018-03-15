@@ -10,5 +10,9 @@ public class Test {
         return (expResult==Main.ReadWord(path));
     }
 
+    public boolean Test_LineCount(int expResult,String path){
+        return (expResult==Main.ReadLine(path));
+    }
+
 
 }

@@ -6,28 +6,30 @@ import java.util.Scanner;
 public class Main {
 
     static StringBuilder sb = new StringBuilder();
-    static String filePath=null;
-    static String outputFileName=null;
-    static String stopListFileName=null;
-    static String fileDir="./";
-    static String fomatName=null;
+    static String filePath = null;
+    static String outputFileName = null;
+    static String stopListFileName = null;
+    static String fileDir = "./";
+    static String fomatName = null;
     static boolean isUseStopList = false;
-    static boolean isOutPutFile=false;
-    static boolean isGetDirFiles=false;
-    static ArrayList<String> canBeFoundFile=new ArrayList<String>();
+    static boolean isOutPutFile = false;
+    static boolean isGetDirFiles = false;
+    static ArrayList<String> canBeFoundFile = new ArrayList<String>();
 
 
     public static void main(String[] args) throws Exception {
 
-        Test exm=new Test();
-        //System.out.println(exm.Test_CharCount(10,"test.c"));
+        Test exm = new Test();
+        String path = "test.c";
+        System.out.println(exm.Test_CharCount(13,"test.c"));
         //System.out.println(exm.Test_WordCount(2,"test.c"));
+        //System.out.println(exm.Test_LineCount(4, path));
 
-        GetDifferentLine("test.c");
 
         //Execute(args);
     }
-    public  static  void Execute(String[] inputArgs){
+
+    public static void Execute(String[] inputArgs) {
         for (int i = 0; i < inputArgs.length; i++) {
             //is use stop list
             if (inputArgs[i].contains("-e")) {
@@ -36,13 +38,13 @@ public class Main {
                 stopListFileName = inputArgs[i];
             }
             //is out put new file
-            if(inputArgs[i].contains("-o")){
-                isOutPutFile=true;
+            if (inputArgs[i].contains("-o")) {
+                isOutPutFile = true;
                 i++;
-                outputFileName=inputArgs[i];
+                outputFileName = inputArgs[i];
             }
-            if(inputArgs[i].contains("-s")){
-                isGetDirFiles=true;
+            if (inputArgs[i].contains("-s")) {
+                isGetDirFiles = true;
             }
         }
 
@@ -51,27 +53,25 @@ public class Main {
         for (int i = 0; i < inputArgs.length; i++) {
             if (inputArgs[i].contains(".")) {
                 fileNameIndex = i;
-                filePath=inputArgs[i];
-                if(filePath.contains("*."))
-                {
-                    int pointIndex=filePath.indexOf(".");
-                    fomatName=filePath.substring(pointIndex);
+                filePath = inputArgs[i];
+                if (filePath.contains("*.")) {
+                    int pointIndex = filePath.indexOf(".");
+                    fomatName = filePath.substring(pointIndex);
                 }
                 break;
             }
         }
 
 
-        if(!isGetDirFiles) {
+        if (!isGetDirFiles) {
             for (int i = 0; i < fileNameIndex; i++) {
                 OrderJudge(inputArgs[i]);
             }
-        }
-        else {
+        } else {
             FindFile(fileDir);
             for (String s :
                     canBeFoundFile) {
-                filePath=s;
+                filePath = s;
                 System.out.println(s);
                 for (int i = 0; i < fileNameIndex; i++) {
                     OrderJudge(inputArgs[i]);
@@ -79,8 +79,8 @@ public class Main {
             }
         }
 
-        if(isOutPutFile)
-            OutPutFile(outputFileName,sb);
+        if (isOutPutFile)
+            OutPutFile(outputFileName, sb);
     }
 
     public static void OrderJudge(String order) {
@@ -93,10 +93,9 @@ public class Main {
             case "-w":
                 if (filePath.isEmpty())
                     return;
-                if (isUseStopList){
+                if (isUseStopList) {
                     StopWordTable(stopListFileName, filePath);
-                }
-                else
+                } else
                     ReadWord(filePath);
                 break;
             case "-l":
@@ -119,7 +118,8 @@ public class Main {
                     return;
                 StopWordTable(stopListFileName, filePath);
                 break;
-            default:break;
+            default:
+                break;
         }
     }
 
@@ -135,7 +135,7 @@ public class Main {
             char character;
             while ((tempChar = reader.read()) != -1) {
                 //判断是不是回车
-                if (!(tempChar == 13 || tempChar == 10))
+                if (!(tempChar == 13 || tempChar == 10||tempChar==9))
                     charCount++;
                 character = (char) tempChar;
             }
@@ -149,7 +149,7 @@ public class Main {
         return 0;
     }
 
-    public static void ReadLine(String path) {
+    public static int ReadLine(String path) {
         File file = new File(path);
         BufferedReader reader = null;
         try {
@@ -162,6 +162,7 @@ public class Main {
             reader.close();
             sb.append(path + "行数：" + line);
             AppendNewLine();
+            return line;
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -172,6 +173,7 @@ public class Main {
                 }
             }
         }
+        return 0;
     }
 
     public static int ReadWord(String path) {
@@ -240,14 +242,13 @@ public class Main {
             while ((tempString = reader.readLine()) != null) {
                 if (tempString.contains("//"))
                     noteLine++;
-                else if (tempString.isEmpty()||IsEmpty(tempString)) {
+                else if (tempString.isEmpty() || IsEmpty(tempString)) {
                     emptyLine++;
                 } else
                     codeLine++;
             }
             reader.close();
             sb.append(path + "代码行/空行/注释行：" + codeLine + "/" + emptyLine + "/" + noteLine);
-            System.out.println("emptyline: "+emptyLine);
             AppendNewLine();
         } catch (IOException e) {
             e.printStackTrace();
@@ -262,7 +263,7 @@ public class Main {
     }
 
     public static void StopWordTable(String tablePath, String filePath) {
-        isUseStopList=false;
+        isUseStopList = false;
         File wordTableFile = new File(tablePath);
         Reader reader = null;
         ArrayList<String> wordTable = new ArrayList<String>();
@@ -322,7 +323,7 @@ public class Main {
 
             }
             reader.close();
-            sb.append(filePath+"单词数:" + wordCount);
+            sb.append(filePath + "单词数:" + wordCount);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -361,20 +362,20 @@ public class Main {
         sb.append('\n');
     }
 
-    private static boolean IsEmpty(String s){
-        char [] characters=s.toCharArray();
-        boolean isAllSpace=true;
-        int otherChar=0;
+    private static boolean IsEmpty(String s) {
+        char[] characters = s.toCharArray();
+        boolean isAllSpace = true;
+        int otherChar = 0;
         for (char c :
                 characters) {
-            if(c!=9&&c!=32)
-                isAllSpace=false;
+            if (c != 9 && c != 32)
+                isAllSpace = false;
             if (!(c >= 65 && c <= 90) || (c >= 97 && c <= 122))
                 otherChar++;
         }
-        if(isAllSpace)
+        if (isAllSpace)
             return true;
-        else if(otherChar<=1)
+        else if (otherChar <= 1)
             return true;
         return false;
     }

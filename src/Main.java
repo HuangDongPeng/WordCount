@@ -9,15 +9,17 @@ public class Main {
     static String filePath=null;
     static String outputFileName=null;
     static String stopListFileName=null;
-    static String fileDir=null;
+    static String fileDir="./";
+    static String fomatName=null;
     static boolean isUseStopList = false;
     static boolean isOutPutFile=false;
     static boolean isGetDirFiles=false;
     static ArrayList<String> canBeFoundFile=new ArrayList<String>();
 
-    public static void main(String[] args) throws Exception {
-        String[] inputArgs = {"-c", "-a","-s", "d:/test/test.c","-e","d:/test/test.txt","-o","d:/output.txt"};
 
+    public static void main(String[] args) throws Exception {
+        String[] inputArgs =args; //{"-c", "-a","-s", "test.c","-e","test.txt","-o","output.txt"};
+        //String[] inputArgs={"-s","-w","*.class","-o","output.txt"};
         for (int i = 0; i < inputArgs.length; i++) {
             //is use stop list
             if (inputArgs[i].contains("-e")) {
@@ -33,16 +35,20 @@ public class Main {
             }
             if(inputArgs[i].contains("-s")){
                 isGetDirFiles=true;
-                fileDir=filePath;
             }
         }
 
         int fileNameIndex = 0;
         //get fileName index
         for (int i = 0; i < inputArgs.length; i++) {
-            if (inputArgs[i].contains(".c")) {
+            if (inputArgs[i].contains(".")) {
                 fileNameIndex = i;
                 filePath=inputArgs[i];
+                if(filePath.contains("*."))
+                {
+                    int pointIndex=filePath.indexOf(".");
+                    fomatName=filePath.substring(pointIndex);
+                }
                 break;
             }
         }
@@ -54,9 +60,11 @@ public class Main {
             }
         }
         else {
+            FindFile(fileDir);
             for (String s :
                     canBeFoundFile) {
                 filePath=s;
+                System.out.println(s);
                 for (int i = 0; i < fileNameIndex; i++) {
                     OrderJudge(inputArgs[i]);
                 }
@@ -181,6 +189,7 @@ public class Main {
             }
             reader.close();
             sb.append(path + "单词数：" + wordCount);
+            AppendNewLine();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -201,7 +210,7 @@ public class Main {
                 e.printStackTrace();
             }
         } else {
-            if (dir.contains(".c")) {
+            if (dir.contains(fomatName)) {
                 canBeFoundFile.add(dir);
             }
         }

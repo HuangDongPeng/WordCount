@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00aa1e4b-d161-417e-a974-02ea120c2086" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,16 +17,17 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="291" column="31" lean-forward="false" selection-start-line="291" selection-start-column="31" selection-end-line="291" selection-end-column="31" />
+            <state relative-caret-position="575">
+              <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#495#503#0" expanded="true" />
                 <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
                 <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
                 <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
-                <element signature="method#FindFile#0;class#Main#0" expanded="false" />
                 <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
-                <element signature="e#7118#7126#0" expanded="true" />
+                <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+                <element signature="e#7556#7564#0" expanded="true" />
                 <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
                 <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
                 <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
@@ -291,7 +291,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -302,12 +302,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#495#503#0" expanded="true" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
             <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
-            <element signature="method#FindFile#0;class#Main#0" expanded="false" />
             <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
-            <element signature="e#7118#7126#0" expanded="true" />
+            <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+            <element signature="e#7556#7564#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
             <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
@@ -321,12 +322,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#495#503#0" expanded="true" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
             <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
-            <element signature="method#FindFile#0;class#Main#0" expanded="false" />
             <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
-            <element signature="e#7118#7126#0" expanded="true" />
+            <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+            <element signature="e#7556#7564#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
             <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
@@ -336,16 +338,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="291" column="31" lean-forward="false" selection-start-line="291" selection-start-column="31" selection-end-line="291" selection-end-column="31" />
+        <state relative-caret-position="575">
+          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#495#503#0" expanded="true" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
             <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
-            <element signature="method#FindFile#0;class#Main#0" expanded="false" />
             <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
-            <element signature="e#7118#7126#0" expanded="true" />
+            <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+            <element signature="e#7556#7564#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
             <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />

@@ -12,9 +12,11 @@ public class Main {
     static String fileDir=null;
     static boolean isUseStopList = false;
     static boolean isOutPutFile=false;
+    static boolean isGetDirFiles=false;
+    static ArrayList<String> canBeFoundFile=new ArrayList<String>();
 
     public static void main(String[] args) throws Exception {
-        String[] inputArgs = {"-c", "-a","-w", "d:/test/test.c","-e","d:/test/test.txt","-o","d:/output.txt"};
+        String[] inputArgs = {"-c", "-a","-s", "d:/test/test.c","-e","d:/test/test.txt","-o","d:/output.txt"};
 
         for (int i = 0; i < inputArgs.length; i++) {
             //is use stop list
@@ -29,6 +31,10 @@ public class Main {
                 i++;
                 outputFileName=inputArgs[i];
             }
+            if(inputArgs[i].contains("-s")){
+                isGetDirFiles=true;
+                fileDir=filePath;
+            }
         }
 
         int fileNameIndex = 0;
@@ -41,10 +47,21 @@ public class Main {
             }
         }
 
-        for (int i = 0; i < fileNameIndex; i++) {
-            OrderJudge(inputArgs[i]);
-        }
 
+        if(!isGetDirFiles) {
+            for (int i = 0; i < fileNameIndex; i++) {
+                OrderJudge(inputArgs[i]);
+            }
+        }
+        else {
+            for (String s :
+                    canBeFoundFile) {
+                filePath=s;
+                for (int i = 0; i < fileNameIndex; i++) {
+                    OrderJudge(inputArgs[i]);
+                }
+            }
+        }
 
         if(isOutPutFile)
             OutPutFile(outputFileName,sb);
@@ -77,11 +94,6 @@ public class Main {
                     return;
                 OutPutFile(outputFileName, sb);
                 break;
-            case "-s":
-                if (fileDir.isEmpty())
-                    return;
-                FindFile(fileDir);
-                break;
             case "-a":
                 if (filePath.isEmpty())
                     return;
@@ -92,6 +104,7 @@ public class Main {
                     return;
                 StopWordTable(stopListFileName, filePath);
                 break;
+            default:break;
         }
     }
 
@@ -189,8 +202,7 @@ public class Main {
             }
         } else {
             if (dir.contains(".c")) {
-
-                //所要做的操作
+                canBeFoundFile.add(dir);
             }
         }
     }

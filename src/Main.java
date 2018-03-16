@@ -21,10 +21,10 @@ public class Main {
 
         Test exm = new Test();
         String path = "test.c";
-        System.out.println(exm.Test_CharCount(13,"test.c"));
+        //System.out.println(exm.Test_CharCount(13,"test.c"));
         //System.out.println(exm.Test_WordCount(2,"test.c"));
         //System.out.println(exm.Test_LineCount(4, path));
-
+        System.out.println(exm.Test_ReadDiffLine(2,1,2,path));
 
         //Execute(args);
     }
@@ -229,7 +229,8 @@ public class Main {
         }
     }
 
-    public static void GetDifferentLine(String path) {
+    public static int[] GetDifferentLine(String path) {
+        int []result=new int[3];
         File file = new File(path);
         BufferedReader reader = null;
         try {
@@ -250,6 +251,10 @@ public class Main {
             reader.close();
             sb.append(path + "代码行/空行/注释行：" + codeLine + "/" + emptyLine + "/" + noteLine);
             AppendNewLine();
+            result[0]=codeLine;
+            result[1]=emptyLine;
+            result[2]=noteLine;
+            return result;
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -260,6 +265,7 @@ public class Main {
                 }
             }
         }
+        return result;
     }
 
     public static void StopWordTable(String tablePath, String filePath) {

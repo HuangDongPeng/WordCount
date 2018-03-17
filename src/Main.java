@@ -12,7 +12,8 @@ public class Main {
     static String outputFileName = null;
     static String stopListFileName = null;
     static String fileDir = "./";
-    static String fomatName = null;
+    public static String fomatName = null;
+
     static boolean isUseStopList = false;
     static boolean isOutPutFile = false;
     static boolean isGetDirFiles = false;
@@ -24,12 +25,12 @@ public class Main {
         Test exm = new Test();
         String path = "test.c";
         String stopListPath="wordTable.txt";
-        PrintTestResult(exm.Test_CharCount(15,path));
-        PrintTestResult(exm.Test_LineCount(5,path));
-        PrintTestResult(exm.Test_WordCount(2,path));
-        PrintTestResult(exm.Test_ReadDiffLine(2,1,2,path));
-        PrintTestResult(exm.Test_StopList(1,stopListPath,path));
-
+        //PrintTestResult(exm.Test_CharCount(15,path));
+        //PrintTestResult(exm.Test_LineCount(5,path));
+        //PrintTestResult(exm.Test_WordCount(2,path));
+        //PrintTestResult(exm.Test_ReadDiffLine(2,1,2,path));
+        //PrintTestResult(exm.Test_StopList(1,stopListPath,path));
+        PrintTestResult(exm.Test_Recursion(2,"./",".c"));
 
         //Execute(args);
     }
@@ -64,7 +65,7 @@ public class Main {
                 fileNameIndex = i;
                 filePath = inputArgs[i];
                 if (filePath.contains("*.")) {
-                    int pointIndex = filePath.indexOf(".");
+                    int pointIndex = filePath.lastIndexOf(".");
                     fomatName = filePath.substring(pointIndex);
                 }
                 break;
@@ -217,7 +218,8 @@ public class Main {
         return 0;
     }
 
-    public static void FindFile(String dir) {
+    public static int FindFile(String dir) {
+
         File tmpFile = new File(dir);
         if (tmpFile.isDirectory()) {
             try {
@@ -233,9 +235,15 @@ public class Main {
             }
         } else {
             if (dir.contains(fomatName)) {
-                canBeFoundFile.add(dir);
+                int filePointIndex=dir.lastIndexOf(".");
+                String rightFormatName=dir.substring(filePointIndex);
+                //System.out.println(dir.substring(filePointIndex));
+                if(rightFormatName.equals(fomatName))
+                    canBeFoundFile.add(dir);
             }
         }
+
+        return canBeFoundFile.size();
     }
 
     public static int[] GetDifferentLine(String path) {

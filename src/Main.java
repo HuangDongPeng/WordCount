@@ -1,3 +1,5 @@
+import com.sun.xml.internal.fastinfoset.tools.PrintTable;
+
 import java.io.*;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -21,12 +23,19 @@ public class Main {
 
         Test exm = new Test();
         String path = "test.c";
-        //System.out.println(exm.Test_CharCount(13,"test.c"));
-        //System.out.println(exm.Test_WordCount(2,"test.c"));
-        //System.out.println(exm.Test_LineCount(4, path));
-        System.out.println(exm.Test_ReadDiffLine(2,1,2,path));
+        String stopListPath="wordTable.txt";
+        PrintTestResult(exm.Test_CharCount(15,path));
+        PrintTestResult(exm.Test_LineCount(5,path));
+        PrintTestResult(exm.Test_WordCount(2,path));
+        PrintTestResult(exm.Test_ReadDiffLine(2,1,2,path));
+        PrintTestResult(exm.Test_StopList(1,stopListPath,path));
+
 
         //Execute(args);
+    }
+
+    static void PrintTestResult(Object Result){
+        System.out.println("result: "+Result);
     }
 
     public static void Execute(String[] inputArgs) {
@@ -268,11 +277,12 @@ public class Main {
         return result;
     }
 
-    public static void StopWordTable(String tablePath, String filePath) {
+    public static int StopWordTable(String tablePath, String filePath) {
         isUseStopList = false;
         File wordTableFile = new File(tablePath);
         Reader reader = null;
         ArrayList<String> wordTable = new ArrayList<String>();
+        int wordCount = 0;
 
         try {
             reader = new InputStreamReader(new FileInputStream(wordTableFile));
@@ -308,7 +318,6 @@ public class Main {
         try {
             reader = new InputStreamReader(new FileInputStream(readFile));
             int tempChar;
-            int wordCount = 0;
             boolean isChar = false;
             StringBuilder localSb = new StringBuilder();
 
@@ -330,9 +339,11 @@ public class Main {
             }
             reader.close();
             sb.append(filePath + "单词数:" + wordCount);
+            return wordCount;
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return wordCount;
     }
 
     public static boolean IsInTable(ArrayList<String> tabel, String word) {

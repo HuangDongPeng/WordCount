@@ -36,19 +36,32 @@ public class Test {
         return PrintErrorDetail(GetMethodName(), expResult, testResult);
     }
 
-    public boolean Test_Recursion(int expFileCount, String path,String formateName) {
-        Main.fomatName=formateName;
+    public boolean Test_Recursion(int expFileCount, String path, String formateName) {
+        Main.fomatName = formateName;
         return PrintErrorDetail(GetMethodName(), expFileCount, Main.FindFile(path));
     }
 
-    public boolean Test_OutputFile(StringBuilder sb,String outputPath){
-        System.out.println("test: "+GetMethodName());
-        if(Main.OutPutFile(outputPath,sb)){
+    public boolean Test_OutputFile(StringBuilder sb, String outputPath) {
+        System.out.println("test: " + GetMethodName());
+        if (Main.OutPutFile(outputPath, sb)) {
             System.out.println("out put file success");
             return true;
         }
         System.out.println("out put file failed");
         return false;
+    }
+
+    public boolean Test_Recursion_StopList(String formatName, String stopListName,int[] expCount) {
+        Main.fomatName = formatName;
+        Main.FindFile("./");
+        boolean result=true ;
+        for(int i=0;i<Main.canBeFoundFile.size();i++){
+            if(!Test_StopList(expCount[i],stopListName,Main.canBeFoundFile.get(i))){
+                result =false;
+            }
+        }
+
+        return result;
     }
 
     private static String GetMethodName() {

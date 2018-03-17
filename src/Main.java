@@ -17,22 +17,28 @@ public class Main {
     static boolean isUseStopList = false;
     static boolean isOutPutFile = false;
     static boolean isGetDirFiles = false;
-    static ArrayList<String> canBeFoundFile = new ArrayList<String>();
+    public static ArrayList<String> canBeFoundFile = new ArrayList<String>();
 
 
     public static void main(String[] args) throws Exception {
 
+        TestCase();
+        //Execute(args);
+    }
+
+    static void TestCase(){
         Test exm = new Test();
         String path = "test.c";
         String stopListPath="wordTable.txt";
-        //PrintTestResult(exm.Test_CharCount(15,path));
-        //PrintTestResult(exm.Test_LineCount(5,path));
-        //PrintTestResult(exm.Test_WordCount(2,path));
-        PrintTestResult(exm.Test_ReadDiffLine(2,1,2,path));
-        //PrintTestResult(exm.Test_StopList(1,stopListPath,path));
-        //PrintTestResult(exm.Test_Recursion(2,"./",".c"));
-        PrintTestResult(exm.Test_OutputFile(sb,"output.txt"));
-        //Execute(args);
+//        PrintTestResult(exm.Test_CharCount(15,path));
+//        PrintTestResult(exm.Test_LineCount(5,path));
+//        PrintTestResult(exm.Test_WordCount(2,path));
+//        PrintTestResult(exm.Test_ReadDiffLine(2,1,2,path));
+//        PrintTestResult(exm.Test_StopList(1,stopListPath,path));
+//        PrintTestResult(exm.Test_Recursion(2,"./",".c"));
+//        PrintTestResult(exm.Test_OutputFile(sb,"output.txt"));
+        int[] expResult={3,1};
+        PrintTestResult(exm.Test_Recursion_StopList(".c",stopListPath,expResult));
     }
 
     static void PrintTestResult(Object Result){

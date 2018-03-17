@@ -28,10 +28,10 @@ public class Main {
         //PrintTestResult(exm.Test_CharCount(15,path));
         //PrintTestResult(exm.Test_LineCount(5,path));
         //PrintTestResult(exm.Test_WordCount(2,path));
-        //PrintTestResult(exm.Test_ReadDiffLine(2,1,2,path));
+        PrintTestResult(exm.Test_ReadDiffLine(2,1,2,path));
         //PrintTestResult(exm.Test_StopList(1,stopListPath,path));
-        PrintTestResult(exm.Test_Recursion(2,"./",".c"));
-
+        //PrintTestResult(exm.Test_Recursion(2,"./",".c"));
+        PrintTestResult(exm.Test_OutputFile(sb,"output.txt"));
         //Execute(args);
     }
 
@@ -363,7 +363,7 @@ public class Main {
         return false;
     }
 
-    public static void OutPutFile(String outputPath, StringBuilder sb) {
+    public static boolean OutPutFile(String outputPath, StringBuilder sb) {
         try {
             File file = new File(outputPath);
             if (!file.exists()) {
@@ -377,9 +377,11 @@ public class Main {
             pw = new PrintWriter(fos);
             pw.write(sb.toString());
             pw.flush();
+            return true;
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return false;
     }
 
     public static void AppendNewLine() {

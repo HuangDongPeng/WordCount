@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00aa1e4b-d161-417e-a974-02ea120c2086" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output.txt" afterPath="$PROJECT_DIR$/output.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test.java" afterPath="$PROJECT_DIR$/src/Test.java" />
     </list>
@@ -15,22 +17,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="946">
-              <caret line="67" column="58" lean-forward="false" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+            <state relative-caret-position="385">
+              <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#612#620#0" expanded="true" />
+                <element signature="e#1291#1292#0" expanded="true" />
+                <element signature="e#1344#1345#0" expanded="true" />
+                <element signature="method#Execute#0;class#Main#0" expanded="false" />
                 <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
                 <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
                 <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
                 <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
+                <element signature="method#FindFile#0;class#Main#0" expanded="false" />
                 <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
-                <element signature="e#9075#9083#0" expanded="true" />
+                <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+                <element signature="e#9137#9145#0" expanded="true" />
                 <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
-                <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
                 <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
                 <element signature="method#IsEmpty#0;class#Main#0" expanded="false" />
               </folding>
@@ -41,7 +47,7 @@
       <file leaf-file-name="PrintStream.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/PrintStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
+            <state relative-caret-position="19200">
               <caret line="819" column="30" lean-forward="false" selection-start-line="819" selection-start-column="24" selection-end-line="819" selection-end-column="30" />
               <folding />
             </state>
@@ -52,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/test.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+              <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -68,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="40" column="76" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="76" />
+            <state relative-caret-position="307">
+              <caret line="44" column="36" lean-forward="false" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
               <folding>
                 <element signature="method#Test_CharCount#0;class#Test#0" expanded="false" />
                 <element signature="method#Test_WordCount#0;class#Test#0" expanded="false" />
@@ -121,12 +127,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="391" />
     <option name="y" value="162" />
     <option name="width" value="1630" />
@@ -148,6 +154,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,10 +195,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,7 +333,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -338,8 +344,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.406181" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -348,8 +354,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -363,7 +369,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -375,14 +381,91 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#612#620#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
             <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
             <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
+            <element signature="method#FindFile#0;class#Main#0" expanded="false" />
             <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
-            <element signature="e#9075#9083#0" expanded="true" />
+            <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+            <element signature="e#9137#9145#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
-            <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
+            <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
+            <element signature="method#IsEmpty#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20475">
+          <caret line="819" column="30" lean-forward="false" selection-start-line="819" selection-start-column="24" selection-end-line="819" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordTable.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="40" column="76" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="76" />
+          <folding>
+            <element signature="method#Test_CharCount#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_WordCount#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_LineCount#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_ReadDiffLine#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_StopList#0;class#Test#0" expanded="false" />
+            <element signature="method#GetMethodName#0;class#Test#0" expanded="false" />
+            <element signature="method#PrintErrorDetail#0;class#Test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6900">
+          <caret line="276" column="0" lean-forward="false" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#612#620#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
+            <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
+            <element signature="method#FindFile#0;class#Main#0" expanded="false" />
+            <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
+            <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+            <element signature="e#9137#9145#0" expanded="true" />
+            <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
             <element signature="method#IsEmpty#0;class#Main#0" expanded="false" />
           </folding>
@@ -420,14 +503,18 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#612#620#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
             <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
             <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
+            <element signature="method#FindFile#0;class#Main#0" expanded="false" />
             <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
-            <element signature="e#9075#9083#0" expanded="true" />
+            <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+            <element signature="e#9137#9145#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
-            <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
             <element signature="method#IsEmpty#0;class#Main#0" expanded="false" />
           </folding>
@@ -465,14 +552,18 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#612#620#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
             <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
             <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
+            <element signature="method#FindFile#0;class#Main#0" expanded="false" />
             <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
-            <element signature="e#9075#9083#0" expanded="true" />
+            <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+            <element signature="e#9137#9145#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
-            <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
             <element signature="method#IsEmpty#0;class#Main#0" expanded="false" />
           </folding>
@@ -486,14 +577,18 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#612#620#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
             <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
             <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
+            <element signature="method#FindFile#0;class#Main#0" expanded="false" />
             <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
-            <element signature="e#9075#9083#0" expanded="true" />
+            <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+            <element signature="e#9137#9145#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
-            <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
             <element signature="method#IsEmpty#0;class#Main#0" expanded="false" />
           </folding>
@@ -507,14 +602,18 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#612#620#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
             <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
             <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
+            <element signature="method#FindFile#0;class#Main#0" expanded="false" />
             <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
-            <element signature="e#9075#9083#0" expanded="true" />
+            <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+            <element signature="e#9137#9145#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
-            <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
             <element signature="method#IsEmpty#0;class#Main#0" expanded="false" />
           </folding>
@@ -539,7 +638,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
+        <state relative-caret-position="19200">
           <caret line="819" column="30" lean-forward="false" selection-start-line="819" selection-start-column="24" selection-end-line="819" selection-end-column="30" />
           <folding />
         </state>
@@ -548,15 +647,40 @@
     <entry file="file://$PROJECT_DIR$/test.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#612#620#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
+            <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
+            <element signature="method#FindFile#0;class#Main#0" expanded="false" />
+            <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
+            <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+            <element signature="e#9137#9145#0" expanded="true" />
+            <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
+            <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
+            <element signature="method#IsEmpty#0;class#Main#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="40" column="76" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="76" />
+        <state relative-caret-position="307">
+          <caret line="44" column="36" lean-forward="false" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
           <folding>
             <element signature="method#Test_CharCount#0;class#Test#0" expanded="false" />
             <element signature="method#Test_WordCount#0;class#Test#0" expanded="false" />
@@ -565,27 +689,6 @@
             <element signature="method#Test_StopList#0;class#Test#0" expanded="false" />
             <element signature="method#GetMethodName#0;class#Test#0" expanded="false" />
             <element signature="method#PrintErrorDetail#0;class#Test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="67" column="58" lean-forward="false" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#612#620#0" expanded="true" />
-            <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
-            <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
-            <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
-            <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
-            <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
-            <element signature="e#9075#9083#0" expanded="true" />
-            <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
-            <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
-            <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
-            <element signature="method#IsEmpty#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>

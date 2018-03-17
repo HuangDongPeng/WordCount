@@ -41,6 +41,16 @@ public class Test {
         return PrintErrorDetail(GetMethodName(), expFileCount, Main.FindFile(path));
     }
 
+    public boolean Test_OutputFile(StringBuilder sb,String outputPath){
+        System.out.println("test: "+GetMethodName());
+        if(Main.OutPutFile(outputPath,sb)){
+            System.out.println("out put file success");
+            return true;
+        }
+        System.out.println("out put file failed");
+        return false;
+    }
+
     private static String GetMethodName() {
         String funName = new Throwable().getStackTrace()[1].getMethodName();
         return funName;

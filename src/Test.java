@@ -51,16 +51,32 @@ public class Test {
         return false;
     }
 
-    public boolean Test_Recursion_StopList(String formatName, String stopListName,int[] expCount) {
+    public boolean Test_Recursion_StopList(String formatName, String stopListName, int[] expCount) {
         Main.fomatName = formatName;
         Main.FindFile("./");
-        boolean result=true ;
-        for(int i=0;i<Main.canBeFoundFile.size();i++){
-            if(!Test_StopList(expCount[i],stopListName,Main.canBeFoundFile.get(i))){
-                result =false;
+        boolean result = true;
+        for (int i = 0; i < Main.canBeFoundFile.size(); i++) {
+            if (!Test_StopList(expCount[i], stopListName, Main.canBeFoundFile.get(i))) {
+                result = false;
             }
         }
 
+        return result;
+    }
+
+    public boolean Test_Recusion_WordRead_OutputFile(String formatName, String outputFileName, int[] expResult) {
+        Main.fomatName = formatName;
+        Main.FindFile(Main.fileDir);
+        boolean result = true;
+
+        for (int i = 0; i < Main.canBeFoundFile.size(); i++) {
+            if (expResult[i] != Main.ReadWord(Main.canBeFoundFile.get(i))) {
+                result = false;
+            }
+        }
+        if (result) {
+            result = Main.OutPutFile(outputFileName, Main.sb);
+        }
         return result;
     }
 

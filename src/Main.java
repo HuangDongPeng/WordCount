@@ -22,8 +22,9 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        TestCase();
-        //Execute(args);
+       // TestCase();
+       // String[] inputArgs={"-c","-w","-s","*.c","-o","ouput2.txt"};
+        Execute(args);
     }
 
     static void TestCase(){
@@ -37,8 +38,10 @@ public class Main {
 //        PrintTestResult(exm.Test_StopList(1,stopListPath,path));
 //        PrintTestResult(exm.Test_Recursion(2,"./",".c"));
 //        PrintTestResult(exm.Test_OutputFile(sb,"output.txt"));
-        int[] expResult={3,1};
-        PrintTestResult(exm.Test_Recursion_StopList(".c",stopListPath,expResult));
+//        int[] expResult={3,1};
+//        PrintTestResult(exm.Test_Recursion_StopList(".c",stopListPath,expResult));
+         int[] expResult2={5,2};
+         PrintTestResult(exm.Test_Recusion_WordRead_OutputFile(".c","ouputtext.txt",expResult2));
     }
 
     static void PrintTestResult(Object Result){
@@ -70,7 +73,7 @@ public class Main {
             if (inputArgs[i].contains(".")) {
                 fileNameIndex = i;
                 filePath = inputArgs[i];
-                if (filePath.contains("*.")) {
+                if (filePath.contains(".")) {
                     int pointIndex = filePath.lastIndexOf(".");
                     fomatName = filePath.substring(pointIndex);
                 }

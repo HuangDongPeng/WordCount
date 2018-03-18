@@ -1,7 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00aa1e4b-d161-417e-a974-02ea120c2086" name="Default" comment="" />
+    <list default="true" id="00aa1e4b-d161-417e-a974-02ea120c2086" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/WordCount.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/COPYRIGHT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/THIRDPARTYLICENSEREADME-JAVAFX.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/THIRDPARTYLICENSEREADME.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/Welcome.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/JAWTAccessBridge-64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/JavaAccessBridge-64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/WindowsAccessBridge-64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/awt.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/dcpr.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/decora_sse.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/deploy.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/dt_shmem.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/dt_socket.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/dtplugin/deployJava1.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/dtplugin/npdeployJava1.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/eula.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/fontmanager.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/fxplugins.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/glass.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/glib-lite.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/gstreamer-lite.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/hprof.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/installer.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/instrument.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/j2pcsc.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/j2pkcs11.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jaas_nt.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jabswitch.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/java-rmi.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/java.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/java.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/java_crw_demo.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/javacpl.cpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/javacpl.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/javafx_font.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/javafx_font_t2k.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/javafx_iio.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/javaw.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/javaws.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jawt.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jdwp.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jfr.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jfxmedia.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jfxwebkit.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jjs.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jli.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jp2iexp.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jp2launcher.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jp2native.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jp2ssv.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jpeg.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jsdt.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jsound.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/jsoundds.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/kcms.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/keytool.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/kinit.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/klist.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/ktab.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/lcms.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/management.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/mlib_image.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/msvcr100.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/net.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/nio.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/npt.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/orbd.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/pack200.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/plugin2/msvcr100.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/plugin2/npjp2.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/policytool.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/prism_common.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/prism_d3d.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/prism_es2.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/prism_sw.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/rmid.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/rmiregistry.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/server/Xusage.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/server/classes.jsa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/server/jvm.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/servertool.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/splashscreen.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/ssv.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/ssvagent.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/sunec.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/sunmscapi.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/t2k.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/tnameserv.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/unpack.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/unpack200.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/verify.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/w2k_lsa_auth.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/wsdetect.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/bin/zip.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/accessibility.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/amd64/jvm.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/calendars.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/charsets.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/classlist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/cmm/CIEXYZ.pf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/cmm/GRAY.pf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/cmm/LINEAR_RGB.pf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/cmm/PYCC.pf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/cmm/sRGB.pf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/content-types.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/currency.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/ffjcext.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/messages_de.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/messages_es.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/messages_fr.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/messages_it.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/messages_ja.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/messages_ko.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/messages_pt_BR.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/messages_sv.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/messages_zh_CN.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/messages_zh_HK.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/messages_zh_TW.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/deploy/splash.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/access-bridge-64.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/cldrdata.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/dnsns.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/jaccess.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/jfxrt.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/localedata.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/meta-index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/nashorn.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/sunec.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/sunjce_provider.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/sunmscapi.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/sunpkcs11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/ext/zipfs.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/flavormap.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/fontconfig.bfc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/fontconfig.properties.src" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/fonts/LucidaBrightDemiBold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/fonts/LucidaBrightDemiItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/fonts/LucidaBrightItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/fonts/LucidaBrightRegular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/fonts/LucidaSansDemiBold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/fonts/LucidaSansRegular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/fonts/LucidaTypewriterBold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/fonts/LucidaTypewriterRegular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/hijrah-config-umalqura.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/images/cursors/cursors.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/images/cursors/invalid32x32.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/images/cursors/win32_CopyDrop32x32.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/images/cursors/win32_CopyNoDrop32x32.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/images/cursors/win32_LinkDrop32x32.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/images/cursors/win32_LinkNoDrop32x32.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/images/cursors/win32_MoveDrop32x32.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/images/cursors/win32_MoveNoDrop32x32.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/javafx.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/javaws.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/jce.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/jfr.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/jfr/default.jfc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/jfr/profile.jfc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/jfxswt.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/jsse.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/jvm.hprof.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/logging.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/management-agent.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/management/jmxremote.access" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/management/jmxremote.password.template" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/management/management.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/management/snmp.acl.template" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/meta-index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/net.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/plugin.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/psfont.properties.ja" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/psfontj2d.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/resources.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/rt.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/security/US_export_policy.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/security/blacklist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/security/blacklisted.certs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/security/cacerts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/security/java.policy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/security/java.security" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/security/javaws.policy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/security/local_policy.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/security/trusted.libraries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/sound.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/tzdb.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/lib/tzmappings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/jre8/release" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/launcher.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/ouput2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/output.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/outputwithwc.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/ss/test2 - 副本.ca" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/ss/test2.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/test.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/wc.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WordCount/wordTable.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ss/test2.c" afterPath="$PROJECT_DIR$/ss/test2.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.c" afterPath="$PROJECT_DIR$/test.c" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,21 +218,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175">
-              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="1388">
+              <caret line="276" column="70" lean-forward="false" selection-start-line="276" selection-start-column="70" selection-end-line="276" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#619#627#0" expanded="true" />
-                <element signature="method#TestCase#0;class#Main#0" expanded="false" />
+                <element signature="e#627#635#0" expanded="true" />
+                <element signature="method#Execute#0;class#Main#0" expanded="false" />
+                <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
                 <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
                 <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
+                <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
                 <element signature="method#FindFile#0;class#Main#0" expanded="false" />
-                <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
                 <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
-                <element signature="e#9522#9530#0" expanded="true" />
+                <element signature="e#9817#9825#0" expanded="true" />
                 <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
                 <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
                 <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
@@ -39,18 +246,18 @@
       <file leaf-file-name="PrintStream.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/PrintStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="19200">
               <caret line="819" column="30" lean-forward="false" selection-start-line="819" selection-start-column="24" selection-end-line="819" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            <state relative-caret-position="150">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,8 +286,8 @@
       <file leaf-file-name="test2.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ss/test2.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,7 +297,7 @@
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="344">
-              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <caret line="66" column="112" lean-forward="false" selection-start-line="66" selection-start-column="112" selection-end-line="66" selection-end-column="112" />
               <folding>
                 <element signature="method#Test_CharCount#0;class#Test#0" expanded="false" />
                 <element signature="method#Test_WordCount#0;class#Test#0" expanded="false" />
@@ -99,6 +306,8 @@
                 <element signature="method#Test_StopList#0;class#Test#0" expanded="false" />
                 <element signature="method#Test_Recursion#0;class#Test#0" expanded="false" />
                 <element signature="method#Test_OutputFile#0;class#Test#0" expanded="false" />
+                <element signature="method#Test_Recursion_StopList#0;class#Test#0" expanded="false" />
+                <element signature="method#Test_Recusion_WordRead_OutputFile#0;class#Test#0" expanded="false" />
                 <element signature="method#GetMethodName#0;class#Test#0" expanded="false" />
                 <element signature="method#PrintErrorDetail#0;class#Test#0" expanded="false" />
               </folding>
@@ -142,11 +351,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/ss/test2.c" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/test.c" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="391" />
     <option name="y" value="162" />
     <option name="width" value="1630" />
@@ -168,9 +379,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,7 +419,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,7 +558,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -358,7 +569,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22737306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22737306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -383,7 +594,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -394,14 +605,106 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#619#627#0" expanded="true" />
-            <element signature="method#TestCase#0;class#Main#0" expanded="false" />
+            <element signature="e#627#635#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
+            <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
             <element signature="method#FindFile#0;class#Main#0" expanded="false" />
-            <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
             <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
-            <element signature="e#9522#9530#0" expanded="true" />
+            <element signature="e#9817#9825#0" expanded="true" />
+            <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
+            <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
+            <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
+            <element signature="method#IsEmpty#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20475">
+          <caret line="819" column="30" lean-forward="false" selection-start-line="819" selection-start-column="24" selection-end-line="819" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordTable.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ss/test2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ss/test2 - 副本.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="method#Test_CharCount#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_WordCount#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_LineCount#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_ReadDiffLine#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_StopList#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_Recursion#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_OutputFile#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_Recursion_StopList#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_Recusion_WordRead_OutputFile#0;class#Test#0" expanded="false" />
+            <element signature="method#GetMethodName#0;class#Test#0" expanded="false" />
+            <element signature="method#PrintErrorDetail#0;class#Test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6025">
+          <caret line="276" column="0" lean-forward="false" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#627#635#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
+            <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
+            <element signature="method#FindFile#0;class#Main#0" expanded="false" />
+            <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
+            <element signature="e#9817#9825#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
             <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
@@ -446,6 +749,8 @@
             <element signature="method#Test_StopList#0;class#Test#0" expanded="false" />
             <element signature="method#Test_Recursion#0;class#Test#0" expanded="false" />
             <element signature="method#Test_OutputFile#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_Recursion_StopList#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_Recusion_WordRead_OutputFile#0;class#Test#0" expanded="false" />
             <element signature="method#GetMethodName#0;class#Test#0" expanded="false" />
             <element signature="method#PrintErrorDetail#0;class#Test#0" expanded="false" />
           </folding>
@@ -466,14 +771,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#619#627#0" expanded="true" />
-            <element signature="method#TestCase#0;class#Main#0" expanded="false" />
+            <element signature="e#627#635#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
+            <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
             <element signature="method#FindFile#0;class#Main#0" expanded="false" />
-            <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
             <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
-            <element signature="e#9522#9530#0" expanded="true" />
+            <element signature="e#9817#9825#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
             <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
@@ -494,6 +800,8 @@
             <element signature="method#Test_StopList#0;class#Test#0" expanded="false" />
             <element signature="method#Test_Recursion#0;class#Test#0" expanded="false" />
             <element signature="method#Test_OutputFile#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_Recursion_StopList#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_Recusion_WordRead_OutputFile#0;class#Test#0" expanded="false" />
             <element signature="method#GetMethodName#0;class#Test#0" expanded="false" />
             <element signature="method#PrintErrorDetail#0;class#Test#0" expanded="false" />
           </folding>
@@ -514,14 +822,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#619#627#0" expanded="true" />
-            <element signature="method#TestCase#0;class#Main#0" expanded="false" />
+            <element signature="e#627#635#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
+            <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
             <element signature="method#FindFile#0;class#Main#0" expanded="false" />
-            <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
             <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
-            <element signature="e#9522#9530#0" expanded="true" />
+            <element signature="e#9817#9825#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
             <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
@@ -542,6 +851,8 @@
             <element signature="method#Test_StopList#0;class#Test#0" expanded="false" />
             <element signature="method#Test_Recursion#0;class#Test#0" expanded="false" />
             <element signature="method#Test_OutputFile#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_Recursion_StopList#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_Recusion_WordRead_OutputFile#0;class#Test#0" expanded="false" />
             <element signature="method#GetMethodName#0;class#Test#0" expanded="false" />
             <element signature="method#PrintErrorDetail#0;class#Test#0" expanded="false" />
           </folding>
@@ -562,14 +873,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#619#627#0" expanded="true" />
-            <element signature="method#TestCase#0;class#Main#0" expanded="false" />
+            <element signature="e#627#635#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
+            <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
             <element signature="method#FindFile#0;class#Main#0" expanded="false" />
-            <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
             <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
-            <element signature="e#9522#9530#0" expanded="true" />
+            <element signature="e#9817#9825#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
             <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
@@ -584,14 +896,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#619#627#0" expanded="true" />
-            <element signature="method#TestCase#0;class#Main#0" expanded="false" />
+            <element signature="e#627#635#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
+            <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
             <element signature="method#FindFile#0;class#Main#0" expanded="false" />
-            <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
             <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
-            <element signature="e#9522#9530#0" expanded="true" />
+            <element signature="e#9817#9825#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
             <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
@@ -606,14 +919,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#619#627#0" expanded="true" />
-            <element signature="method#TestCase#0;class#Main#0" expanded="false" />
+            <element signature="e#627#635#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
+            <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
             <element signature="method#FindFile#0;class#Main#0" expanded="false" />
-            <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
             <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
-            <element signature="e#9522#9530#0" expanded="true" />
+            <element signature="e#9817#9825#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
             <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
@@ -632,7 +946,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="19200">
           <caret line="819" column="30" lean-forward="false" selection-start-line="819" selection-start-column="24" selection-end-line="819" selection-end-column="30" />
           <folding />
         </state>
@@ -642,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,26 +975,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ss/test2.c">
+    <entry file="file://$PROJECT_DIR$/ouputtext.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ouput2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <caret line="66" column="112" lean-forward="false" selection-start-line="66" selection-start-column="112" selection-end-line="66" selection-end-column="112" />
           <folding>
             <element signature="method#Test_CharCount#0;class#Test#0" expanded="false" />
             <element signature="method#Test_WordCount#0;class#Test#0" expanded="false" />
@@ -690,47 +1001,50 @@
             <element signature="method#Test_StopList#0;class#Test#0" expanded="false" />
             <element signature="method#Test_Recursion#0;class#Test#0" expanded="false" />
             <element signature="method#Test_OutputFile#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_Recursion_StopList#0;class#Test#0" expanded="false" />
+            <element signature="method#Test_Recusion_WordRead_OutputFile#0;class#Test#0" expanded="false" />
             <element signature="method#GetMethodName#0;class#Test#0" expanded="false" />
             <element signature="method#PrintErrorDetail#0;class#Test#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ouputtext.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ouput2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="1388">
+          <caret line="276" column="70" lean-forward="false" selection-start-line="276" selection-start-column="70" selection-end-line="276" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#619#627#0" expanded="true" />
-            <element signature="method#TestCase#0;class#Main#0" expanded="false" />
+            <element signature="e#627#635#0" expanded="true" />
+            <element signature="method#Execute#0;class#Main#0" expanded="false" />
+            <element signature="method#OrderJudge#0;class#Main#0" expanded="false" />
             <element signature="method#ReadChar#0;class#Main#0" expanded="false" />
             <element signature="method#ReadLine#0;class#Main#0" expanded="false" />
+            <element signature="method#ReadWord#0;class#Main#0" expanded="false" />
             <element signature="method#FindFile#0;class#Main#0" expanded="false" />
-            <element signature="method#GetDifferentLine#0;class#Main#0" expanded="false" />
             <element signature="method#StopWordTable#0;class#Main#0" expanded="false" />
-            <element signature="e#9522#9530#0" expanded="true" />
+            <element signature="e#9817#9825#0" expanded="true" />
             <element signature="method#IsInTable#0;class#Main#0" expanded="false" />
             <element signature="method#OutPutFile#0;class#Main#0" expanded="false" />
             <element signature="method#AppendNewLine#0;class#Main#0" expanded="false" />
             <element signature="method#IsEmpty#0;class#Main#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ss/test2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -9,7 +9,7 @@ public class Main {
 
     static StringBuilder sb = new StringBuilder();
     static String filePath = null;
-    static String outputFileName = null;
+    static String outputFileName = "result.txt";
     static String stopListFileName = null;
     static String fileDir = "./";
     public static String fomatName = null;
@@ -21,8 +21,7 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
-
-       // TestCase();
+        TestCase();
        // String[] inputArgs={"-c","-w","-s","*.c","-o","ouput2.txt"};
         Execute(args);
     }
@@ -34,14 +33,14 @@ public class Main {
 //        PrintTestResult(exm.Test_CharCount(15,path));
 //        PrintTestResult(exm.Test_LineCount(5,path));
 //        PrintTestResult(exm.Test_WordCount(2,path));
-//        PrintTestResult(exm.Test_ReadDiffLine(2,1,2,path));
+        PrintTestResult(exm.Test_ReadDiffLine(2,1,2,path));
 //        PrintTestResult(exm.Test_StopList(1,stopListPath,path));
 //        PrintTestResult(exm.Test_Recursion(2,"./",".c"));
 //        PrintTestResult(exm.Test_OutputFile(sb,"output.txt"));
 //        int[] expResult={3,1};
 //        PrintTestResult(exm.Test_Recursion_StopList(".c",stopListPath,expResult));
-         int[] expResult2={5,2};
-         PrintTestResult(exm.Test_Recusion_WordRead_OutputFile(".c","ouputtext.txt",expResult2));
+        // int[] expResult2={5,2};
+        // PrintTestResult(exm.Test_Recusion_WordRead_OutputFile(".c","ouputtext.txt",expResult2));
     }
 
     static void PrintTestResult(Object Result){
@@ -260,14 +259,22 @@ public class Main {
         File file = new File(path);
         BufferedReader reader = null;
         try {
-
+            boolean isNote=false;
             reader = new BufferedReader(new FileReader(file));
             String tempString = null;
             int emptyLine = 0;
             int codeLine = 0;
             int noteLine = 0;
             while ((tempString = reader.readLine()) != null) {
-                if (tempString.contains("//"))
+                if(tempString.contains("/*")){
+                    isNote=true;
+                }
+                else if(tempString.contains("*/"))
+                {
+                    isNote=false;
+                }
+
+                if (tempString.contains("//")||tempString.contains("*/")||isNote)
                     noteLine++;
                 else if (tempString.isEmpty() || IsEmpty(tempString)) {
                     emptyLine++;

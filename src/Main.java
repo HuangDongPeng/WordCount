@@ -21,9 +21,9 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
-        TestCase();
-       // String[] inputArgs={"-c","-w","-s","*.c","-o","ouput2.txt"};
-        Execute(args);
+        //TestCase();
+        String[] inputArgs={"-c","-w","-s","d:/test/*.c","-o","ouput2.txt"};
+        Execute(inputArgs);
     }
 
     static void TestCase(){
@@ -33,7 +33,7 @@ public class Main {
 //        PrintTestResult(exm.Test_CharCount(15,path));
 //        PrintTestResult(exm.Test_LineCount(5,path));
 //        PrintTestResult(exm.Test_WordCount(2,path));
-        PrintTestResult(exm.Test_ReadDiffLine(2,1,2,path));
+//        PrintTestResult(exm.Test_ReadDiffLine(2,1,2,path));
 //        PrintTestResult(exm.Test_StopList(1,stopListPath,path));
 //        PrintTestResult(exm.Test_Recursion(2,"./",".c"));
 //        PrintTestResult(exm.Test_OutputFile(sb,"output.txt"));
@@ -86,6 +86,7 @@ public class Main {
                 OrderJudge(inputArgs[i]);
             }
         } else {
+            SetFileDir(inputArgs);
             FindFile(fileDir);
             for (String s :
                     canBeFoundFile) {
@@ -97,8 +98,24 @@ public class Main {
             }
         }
 
-        if (isOutPutFile)
-            OutPutFile(outputFileName, sb);
+        OutPutFile(outputFileName, sb);
+    }
+
+    public static void SetFileDir(String[] inputArgs){
+        for (String s :
+                inputArgs) {
+            if(s.contains(".")){
+                fileDir=s;
+                break;
+            }
+        }
+        int indexOfPoint=fileDir.indexOf("*");
+        if(indexOfPoint==-1)
+            fileDir="./";
+        else
+            fileDir=fileDir.substring(0,indexOfPoint);
+
+        System.out.println("file dir: "+fileDir);
     }
 
     public static void OrderJudge(String order) {

@@ -1,4 +1,0 @@
-d:/test//ss/test2.c字符数： 33
-d:/test//ss/test2.c单词数：5
-d:/test//test.c字符数： 35
-d:/test//test.c单词数：5

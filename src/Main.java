@@ -22,14 +22,15 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         //TestCase();
-        String[] inputArgs={"-c","-w","-s","d:/test/*.c","-o","ouput2.txt"};
+       // String[] inputArgs = {"-w", "test.c", "-e", "stoplist.txt"};
+       String[] inputArgs=args;
         Execute(inputArgs);
     }
 
-    static void TestCase(){
+    static void TestCase() {
         Test exm = new Test();
         String path = "test.c";
-        String stopListPath="wordTable.txt";
+        String stopListPath = "wordTable.txt";
 //        PrintTestResult(exm.Test_CharCount(15,path));
 //        PrintTestResult(exm.Test_LineCount(5,path));
 //        PrintTestResult(exm.Test_WordCount(2,path));
@@ -43,8 +44,8 @@ public class Main {
         // PrintTestResult(exm.Test_Recusion_WordRead_OutputFile(".c","ouputtext.txt",expResult2));
     }
 
-    static void PrintTestResult(Object Result){
-        System.out.println("result: "+Result);
+    static void PrintTestResult(Object Result) {
+        System.out.println("result: " + Result);
     }
 
     public static void Execute(String[] inputArgs) {
@@ -101,21 +102,21 @@ public class Main {
         OutPutFile(outputFileName, sb);
     }
 
-    public static void SetFileDir(String[] inputArgs){
+    public static void SetFileDir(String[] inputArgs) {
         for (String s :
                 inputArgs) {
-            if(s.contains(".")){
-                fileDir=s;
+            if (s.contains(".")) {
+                fileDir = s;
                 break;
             }
         }
-        int indexOfPoint=fileDir.indexOf("*");
-        if(indexOfPoint==-1)
-            fileDir="./";
+        int indexOfPoint = fileDir.indexOf("*");
+        if (indexOfPoint == -1)
+            fileDir = "./";
         else
-            fileDir=fileDir.substring(0,indexOfPoint);
+            fileDir = fileDir.substring(0, indexOfPoint);
 
-        System.out.println("file dir: "+fileDir);
+        System.out.println("file dir: " + fileDir);
     }
 
     public static void OrderJudge(String order) {
@@ -170,7 +171,7 @@ public class Main {
             char character;
             while ((tempChar = reader.read()) != -1) {
                 //判断是不是回车
-                if (!(tempChar == 13 || tempChar == 10||tempChar==9))
+                if (!(tempChar == 13 || tempChar == 10 || tempChar == 9))
                     charCount++;
                 character = (char) tempChar;
             }
@@ -219,20 +220,28 @@ public class Main {
             int wordCount = 0;
             reader = new InputStreamReader(new FileInputStream(file));
             int tempChar;
-            char character;
             boolean isChar = false;
             while ((tempChar = reader.read()) != -1) {
-                if ((tempChar >= 65 && tempChar <= 90) || (tempChar >= 97 && tempChar <= 122)) {
+                if (tempChar != '\t' && tempChar != '\n' && tempChar != ' ') {
+                    System.out.print((char) tempChar);
                     isChar = true;
                 } else {
                     if (isChar) {
+                        System.out.println();
                         isChar = false;
                         wordCount++;
+
                     }
                     continue;
                 }
 
             }
+            if (isChar) {
+                wordCount++;
+                isChar = false;
+            }
+
+
             reader.close();
             sb.append(path + "单词数：" + wordCount);
             AppendNewLine();
@@ -260,10 +269,10 @@ public class Main {
             }
         } else {
             if (dir.contains(fomatName)) {
-                int filePointIndex=dir.lastIndexOf(".");
-                String rightFormatName=dir.substring(filePointIndex);
+                int filePointIndex = dir.lastIndexOf(".");
+                String rightFormatName = dir.substring(filePointIndex);
                 //System.out.println(dir.substring(filePointIndex));
-                if(rightFormatName.equals(fomatName))
+                if (rightFormatName.equals(fomatName))
                     canBeFoundFile.add(dir);
             }
         }
@@ -272,26 +281,24 @@ public class Main {
     }
 
     public static int[] GetDifferentLine(String path) {
-        int []result=new int[3];
+        int[] result = new int[3];
         File file = new File(path);
         BufferedReader reader = null;
         try {
-            boolean isNote=false;
+            boolean isNote = false;
             reader = new BufferedReader(new FileReader(file));
             String tempString = null;
             int emptyLine = 0;
             int codeLine = 0;
             int noteLine = 0;
             while ((tempString = reader.readLine()) != null) {
-                if(tempString.contains("/*")){
-                    isNote=true;
-                }
-                else if(tempString.contains("*/"))
-                {
-                    isNote=false;
+                if (tempString.contains("/*")) {
+                    isNote = true;
+                } else if (tempString.contains("*/")) {
+                    isNote = false;
                 }
 
-                if (tempString.contains("//")||tempString.contains("*/")||isNote)
+                if (tempString.contains("//") || tempString.contains("*/") || isNote)
                     noteLine++;
                 else if (tempString.isEmpty() || IsEmpty(tempString)) {
                     emptyLine++;
@@ -301,9 +308,9 @@ public class Main {
             reader.close();
             sb.append(path + "代码行/空行/注释行：" + codeLine + "/" + emptyLine + "/" + noteLine);
             AppendNewLine();
-            result[0]=codeLine;
-            result[1]=emptyLine;
-            result[2]=noteLine;
+            result[0] = codeLine;
+            result[1] = emptyLine;
+            result[2] = noteLine;
             return result;
         } catch (IOException e) {
             e.printStackTrace();
@@ -326,18 +333,20 @@ public class Main {
         int wordCount = 0;
 
         try {
+            System.out.println("stop list word:");
             reader = new InputStreamReader(new FileInputStream(wordTableFile));
             int tempChar;
             boolean isChar = false;
             StringBuilder sb = new StringBuilder();
 
             while ((tempChar = reader.read()) != -1) {
-                if ((tempChar >= 65 && tempChar <= 90) || (tempChar >= 97 && tempChar <= 122)) {
+                if (tempChar != '\t' && tempChar != '\n' && tempChar != ' ') {
                     isChar = true;
                     sb.append((char) tempChar);
                 } else {
                     if (isChar) {
                         wordTable.add(sb.toString());
+                        System.out.print(sb.toString() + " ");
                         sb = new StringBuilder();
                         isChar = false;
                     }
@@ -361,9 +370,11 @@ public class Main {
             int tempChar;
             boolean isChar = false;
             StringBuilder localSb = new StringBuilder();
-
+            System.out.println();
             while ((tempChar = reader.read()) != -1) {
-                if ((tempChar >= 65 && tempChar <= 90) || (tempChar >= 97 && tempChar <= 122)) {
+                System.out.print((char) tempChar);
+
+                if ((tempChar != '\t' && tempChar != '\n' && tempChar != ' ')) {
                     isChar = true;
                     localSb.append((char) tempChar);
                 } else {
@@ -378,6 +389,12 @@ public class Main {
                 }
 
             }
+            if (isChar)
+                if (!IsInTable(wordTable, localSb.toString())) {
+                    wordCount++;
+                    isChar = false;
+                }
+
             reader.close();
             sb.append(filePath + "单词数:" + wordCount);
             return wordCount;

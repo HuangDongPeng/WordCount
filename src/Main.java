@@ -36,10 +36,10 @@ public class Main {
         String stopListPath = "testCase/wordTable.txt";
         PrintTestResult(exm.Test_CharCount(20,path));
         PrintTestResult(exm.Test_LineCount(9,path));
-        PrintTestResult(exm.Test_WordCount(4,path));
+        PrintTestResult(exm.Test_WordCount(6,path));
         PrintTestResult(exm.Test_ReadDiffLine(4,4,1,path));
-        PrintTestResult(exm.Test_StopList(2,stopListPath,path));
-        PrintTestResult(exm.Test_Recursion(2,"./",".c"));
+        PrintTestResult(exm.Test_StopList(6,stopListPath,path));
+        PrintTestResult(exm.Test_Recursion(2,"./testCase",".c"));
         PrintTestResult(exm.Test_OutputFile(sb,"testCase/output.txt"));
         int[] expResult={3,1};
        // PrintTestResult(exm.Test_Recursion_StopList(".c",stopListPath,expResult));

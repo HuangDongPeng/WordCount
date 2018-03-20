@@ -112,12 +112,15 @@ public class Main {
                 break;
             }
         }
+
         int indexOfPoint = fileDir.indexOf("*");
         if (indexOfPoint == -1)
             fileDir = "./";
         else
             fileDir = fileDir.substring(0, indexOfPoint);
 
+        if(fileDir.isEmpty())
+            fileDir="./";
         System.out.println("file dir: " + fileDir);
     }
 

@@ -1,1 +1,3 @@
-.\test.c单词数:15
+.//test.c单词数：21
+.//testCase/ss/test2.c单词数：6
+.//testCase/test.c单词数：6

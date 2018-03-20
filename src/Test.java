@@ -53,7 +53,7 @@ public class Test {
 
     public boolean Test_Recursion_StopList(String formatName, String stopListName, int[] expCount) {
         Main.fomatName = formatName;
-        Main.FindFile("./");
+        Main.FindFile("testCase/");
         boolean result = true;
         for (int i = 0; i < Main.canBeFoundFile.size(); i++) {
             if (!Test_StopList(expCount[i], stopListName, Main.canBeFoundFile.get(i))) {

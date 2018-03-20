@@ -21,27 +21,30 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
-        //TestCase();
-       // String[] inputArgs = {"-w", "test.c", "-e", "stoplist.txt"};
-       String[] inputArgs=args;
-        Execute(inputArgs);
+//        if (args[0].equals("testCase"))
+            TestCase();
+  //      else {
+            // String[] inputArgs = {"-w", "test.c", "-e", "stoplist.txt"};
+        //    String[] inputArgs = args;
+      //      Execute(inputArgs);
+    //    }
     }
 
     static void TestCase() {
         Test exm = new Test();
-        String path = "test.c";
-        String stopListPath = "wordTable.txt";
-//        PrintTestResult(exm.Test_CharCount(15,path));
-//        PrintTestResult(exm.Test_LineCount(5,path));
-//        PrintTestResult(exm.Test_WordCount(2,path));
-//        PrintTestResult(exm.Test_ReadDiffLine(2,1,2,path));
-//        PrintTestResult(exm.Test_StopList(1,stopListPath,path));
-//        PrintTestResult(exm.Test_Recursion(2,"./",".c"));
-//        PrintTestResult(exm.Test_OutputFile(sb,"output.txt"));
-//        int[] expResult={3,1};
-//        PrintTestResult(exm.Test_Recursion_StopList(".c",stopListPath,expResult));
-        // int[] expResult2={5,2};
-        // PrintTestResult(exm.Test_Recusion_WordRead_OutputFile(".c","ouputtext.txt",expResult2));
+        String path = "testCase/test.c";
+        String stopListPath = "testCase/wordTable.txt";
+        PrintTestResult(exm.Test_CharCount(20,path));
+        PrintTestResult(exm.Test_LineCount(9,path));
+        PrintTestResult(exm.Test_WordCount(4,path));
+        PrintTestResult(exm.Test_ReadDiffLine(4,4,1,path));
+        PrintTestResult(exm.Test_StopList(2,stopListPath,path));
+        PrintTestResult(exm.Test_Recursion(2,"./",".c"));
+        PrintTestResult(exm.Test_OutputFile(sb,"testCase/output.txt"));
+        int[] expResult={3,1};
+       // PrintTestResult(exm.Test_Recursion_StopList(".c",stopListPath,expResult));
+        int[] expResult2={5,2};
+        //PrintTestResult(exm.Test_Recusion_WordRead_OutputFile(".c","ouputtext.txt",expResult2));
     }
 
     static void PrintTestResult(Object Result) {
@@ -215,33 +218,28 @@ public class Main {
     public static int ReadWord(String path) {
         File file = new File(path);
         Reader reader = null;
-
         try {
             int wordCount = 0;
             reader = new InputStreamReader(new FileInputStream(file));
             int tempChar;
             boolean isChar = false;
             while ((tempChar = reader.read()) != -1) {
-                if (tempChar != '\t' && tempChar != '\n' && tempChar != ' ') {
-                    System.out.print((char) tempChar);
+                if (tempChar != '\t' && tempChar != '\n' && tempChar != ' '&&tempChar!='\r') {
+                    System.out.print((char)tempChar);
                     isChar = true;
                 } else {
                     if (isChar) {
                         System.out.println();
                         isChar = false;
                         wordCount++;
-
                     }
                     continue;
                 }
-
             }
             if (isChar) {
                 wordCount++;
                 isChar = false;
             }
-
-
             reader.close();
             sb.append(path + "单词数：" + wordCount);
             AppendNewLine();
@@ -340,13 +338,12 @@ public class Main {
             StringBuilder sb = new StringBuilder();
 
             while ((tempChar = reader.read()) != -1) {
-                if (tempChar != '\t' && tempChar != '\n' && tempChar != ' ') {
+                if (tempChar != '\t' && tempChar != '\n' && tempChar != ' '&&tempChar!='\r') {
                     isChar = true;
                     sb.append((char) tempChar);
                 } else {
                     if (isChar) {
                         wordTable.add(sb.toString());
-                        System.out.print(sb.toString() + " ");
                         sb = new StringBuilder();
                         isChar = false;
                     }
@@ -370,11 +367,8 @@ public class Main {
             int tempChar;
             boolean isChar = false;
             StringBuilder localSb = new StringBuilder();
-            System.out.println();
             while ((tempChar = reader.read()) != -1) {
-                System.out.print((char) tempChar);
-
-                if ((tempChar != '\t' && tempChar != '\n' && tempChar != ' ')) {
+                if ((tempChar != '\t' && tempChar != '\n' && tempChar != ' '&&tempChar!='\r')) {
                     isChar = true;
                     localSb.append((char) tempChar);
                 } else {

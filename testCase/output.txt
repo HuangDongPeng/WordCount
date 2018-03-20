@@ -1,0 +1,5 @@
+testCase/test.c字符数： 20
+testCase/test.c行数：9
+testCase/test.c单词数：6
+testCase/test.c代码行/空行/注释行：1/4/4
+testCase/test.c单词数:10

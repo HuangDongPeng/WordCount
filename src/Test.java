@@ -52,6 +52,7 @@ public class Test {
     }
 
     public boolean Test_Recursion_StopList(String formatName, String stopListName, int[] expCount) {
+        Main.canBeFoundFile.clear();
         Main.fomatName = formatName;
         Main.FindFile("testCase/");
         boolean result = true;
@@ -65,8 +66,9 @@ public class Test {
     }
 
     public boolean Test_Recusion_WordRead_OutputFile(String formatName, String outputFileName, int[] expResult) {
+        Main.canBeFoundFile.clear();
         Main.fomatName = formatName;
-        Main.FindFile(Main.fileDir);
+        Main.FindFile("testCase/");
         boolean result = true;
 
         for (int i = 0; i < Main.canBeFoundFile.size(); i++) {

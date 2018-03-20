@@ -21,13 +21,13 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
-//        if (args[0].equals("testCase"))
+        if (args[0].equals("testCase"))
             TestCase();
-  //      else {
+        else {
             // String[] inputArgs = {"-w", "test.c", "-e", "stoplist.txt"};
-        //    String[] inputArgs = args;
-      //      Execute(inputArgs);
-    //    }
+            String[] inputArgs = args;
+            Execute(inputArgs);
+        }
     }
 
     static void TestCase() {
@@ -41,10 +41,10 @@ public class Main {
         PrintTestResult(exm.Test_StopList(6,stopListPath,path));
         PrintTestResult(exm.Test_Recursion(2,"./testCase",".c"));
         PrintTestResult(exm.Test_OutputFile(sb,"testCase/output.txt"));
-        int[] expResult={3,1};
-       // PrintTestResult(exm.Test_Recursion_StopList(".c",stopListPath,expResult));
+        int[] expResult={6,6};
+        PrintTestResult(exm.Test_Recursion_StopList(".c",stopListPath,expResult));
         int[] expResult2={5,2};
-        //PrintTestResult(exm.Test_Recusion_WordRead_OutputFile(".c","ouputtext.txt",expResult2));
+        PrintTestResult(exm.Test_Recusion_WordRead_OutputFile(".c","ouputtext.txt",expResult2));
     }
 
     static void PrintTestResult(Object Result) {
@@ -95,7 +95,6 @@ public class Main {
             for (String s :
                     canBeFoundFile) {
                 filePath = s;
-                System.out.println(s);
                 for (int i = 0; i < fileNameIndex; i++) {
                     OrderJudge(inputArgs[i]);
                 }
@@ -225,11 +224,9 @@ public class Main {
             boolean isChar = false;
             while ((tempChar = reader.read()) != -1) {
                 if (tempChar != '\t' && tempChar != '\n' && tempChar != ' '&&tempChar!='\r') {
-                    System.out.print((char)tempChar);
                     isChar = true;
                 } else {
                     if (isChar) {
-                        System.out.println();
                         isChar = false;
                         wordCount++;
                     }
@@ -270,8 +267,9 @@ public class Main {
                 int filePointIndex = dir.lastIndexOf(".");
                 String rightFormatName = dir.substring(filePointIndex);
                 //System.out.println(dir.substring(filePointIndex));
-                if (rightFormatName.equals(fomatName))
+                if (rightFormatName.equals(fomatName)){
                     canBeFoundFile.add(dir);
+            }
             }
         }
 
